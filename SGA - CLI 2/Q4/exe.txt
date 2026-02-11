@@ -1,0 +1,84 @@
+COMMAND:
+
+    1:         mkdir Question4
+
+    2:         cd Question4
+
+    3:         cat > emails.txt <<EOL
+                 alice123@gmail.com
+                 bob!@example.com
+                 charlie@example.com
+                 david@example123.com
+                 eve@domain.com
+                 alice123@gmail.com
+                 john.doe@website.com
+                 jane@site
+                 EOL
+
+
+    4:         cat emails.txt
+
+    5:         nano emailcleaner.sh
+
+    6:         chmod +x emailcleaner.sh
+
+    7:         ./emailcleaner.sh
+
+    8:          cat valid.txt
+
+Explanation:
+
+
+    1:         mkdir Question4
+
+    => Explanation : Create a folder for Question 4 files.
+
+    2:         cd Question4
+
+    => Explanation :  Move into the folder.
+
+    3:         cat > emails.txt <<EOL
+                 alice123@gmail.com
+                 bob!@example.com
+                 charlie@example.com
+                 david@example123.com
+                 eve@domain.com
+                 alice123@gmail.com
+                 john.doe@website.com
+                 jane@site
+                 EOL
+
+    => Explanation : Create emails.txt with sample email addresses.
+
+ 
+    4:         cat emails.txt
+
+    => Explanation : Verify the content of emails.txt.
+
+
+
+    5:         nano emailcleaner.sh
+
+    => Explanation : Open nano editor to write the shell script.
+
+
+    6:         chmod +x emailcleaner.sh
+
+    => Explanation :  Make the script executable.
+
+
+    7:         ./emailcleaner.sh
+
+    => Explanation : Run the script to extract valid and invalid emails.
+
+
+    8:          cat valid.txt
+
+    => Explanation :  Check the list of valid emails after removing duplicates.
+
+
+    9:          cat invalid.txt
+
+    => Explanation : Check the list of invalid emails.
+
+    9:          cat invalid.txt
