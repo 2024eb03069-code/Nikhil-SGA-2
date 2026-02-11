@@ -1,0 +1,50 @@
+COMMAND:
+
+            1:     mkdir Question6
+
+            2:     cd Question6
+
+            3:     cat > input.txt <<EOL
+                      Linux is a powerful and flexible operating system used worldwide
+                      It allows multitasking, networking, and user management
+                      Shell scripting helps automate repetitive tasks efficiently
+                      EOL
+
+            4:      nano metrics.sh
+
+            5:      chmod +x metrics.sh
+
+            6:          ./metrics.sh
+
+EXPLANATION:
+
+            1:     mkdir Question6
+
+ =>  Create folder for Question 6 files
+
+            2:     cd Question6
+
+=>   Move into the folder
+
+            3:     cat > input.txt <<EOL
+                      Linux is a powerful and flexible operating system used worldwide
+                      It allows multitasking, networking, and user management
+                      Shell scripting helps automate repetitive tasks efficiently
+                      EOL
+
+=>  Create input.txt with sample text
+
+            4:      nano metrics.sh
+
+ => Create metrics.sh shell script for text analysis
+
+            5:      chmod +x metrics.sh
+
+ => Make the script executable
+
+            6:          ./metrics.sh
+                  =>     Run the script to:
+               - Find longest word  
+               - Find shortest word
+               - Calculate average word length
+               - Count total unique words
