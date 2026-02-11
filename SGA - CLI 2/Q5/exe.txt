@@ -1,0 +1,63 @@
+COMMAND:
+
+    1:    mkdir Question5
+
+    2:    cd Question5
+
+    3:    mkdir dirA dirB
+
+            echo "Hello World" > dirA/file1.txt
+            echo "This is file2" > dirA/file2.txt
+            echo "Same content" > dirA/file3.txt
+
+            echo "Hello World" > dirB/file1.txt
+            echo "Different content" > dirB/file3.txt
+            echo "Only in B" > dirB/file4.txt
+
+    4:    nano sync.sh
+
+
+    5:    chmod +x sync.sh
+
+    6:    ./sync.sh
+
+EXPLANATION:
+
+    1:    mkdir Question5
+
+    =>    Create folder for Question 5.
+
+    2:    cd Question5
+
+    =>    Move into the folder Question 5.
+
+
+    3:    mkdir dirA dirB
+
+            echo "Hello World" > dirA/file1.txt
+            echo "This is file2" > dirA/file2.txt
+            echo "Same content" > dirA/file3.txt
+
+            echo "Hello World" > dirB/file1.txt
+            echo "Different content" > dirB/file3.txt
+            echo "Only in B" > dirB/file4.txt
+
+    =>    Create two directories to compare.
+
+           echo "..." > dirA/file1.txt
+                Create sample files in dirA and dirB for testing.
+
+    4:    nano sync.sh
+
+    =>    Open nano editor to write the sync.sh script.
+
+
+
+    5:    chmod +x sync.sh
+
+    =>    Make the script executable.
+
+
+    6:    ./sync.sh
+
+    =>    Run the script to compare directories.
