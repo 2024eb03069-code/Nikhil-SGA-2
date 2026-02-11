@@ -1,0 +1,61 @@
+EXPLANATION
+
+    
+      1:   mkdir Question2
+
+      =>  Explanation: Creates a folder for Question 2.
+
+        
+      2:   cd Question2
+
+      =>  Explanation: Moves into the Question2 folder.
+
+        
+      3:   nano sample.log
+
+      =>  Explanation: Creates a sample log file with entries to test the script.
+
+        
+      4:   nano log_analyze.sh
+
+      =>  Explanation: Creates a shell script to analyze the log file, count log levels, and generate a summary report.
+
+        
+      5:   chmod +x log_analyze.sh
+
+      =>  Explanation: Makes the script executable.
+
+        
+      6:   ./log_analyze.sh sample.log
+
+      =>  Explanation: Runs the script with the sample log file, counts total entries, INFO, WARNING, ERROR messages, and displays the most recent ERROR.
+
+       
+      7:   ./log_analyze.sh
+
+      =>  Explanation: Tests error handling when no argument is provided.
+
+        
+      8:   ./log_analyze.sh notexist.log
+
+      =>  Explanation: Tests error handling when a non-existent log file is provided
+
+COMMANDS:
+   
+        
+      1:   mkdir Question2
+        
+      2:   cd Question2
+        
+      3:   nano sample.log
+        
+      4:   nano log_analyze.sh
+        
+      5:   chmod +x log_analyze.sh
+        
+      6:   ./log_analyze.sh sample.log
+       
+      7:   ./log_analyze.sh
+        
+      8:   ./log_analyze.sh notexist.log
+                
