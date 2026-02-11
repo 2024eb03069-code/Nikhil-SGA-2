@@ -1,0 +1,82 @@
+OUTPUTS:
+
+      1:      mkdir Question3
+
+      2:      cd Question3
+
+      3:      cat > marks.txt <<EOL
+              101, Alice, 45, 32, 40
+              102, Bob, 50, 50, 50
+              103, Charlie, 30, 34, 40
+              104, David, 20, 25, 15
+              105, Eve, 33, 33, 33
+              EOL
+
+      4:      cat marks.txt
+
+      5:      nano validate_results.sh
+
+      6:      chmod +x validate_results.sh
+
+      7:      ./validate_results.sh
+
+      8:      ./validate_results.sh > result.txt
+
+      9:      cat result.txt
+
+EXPLANATIONS:
+ 
+ OUTPUTS:
+
+      1:      mkdir Question3
+
+      =>       Explanation : Creates a folder named Question3 to store files for this question.
+
+
+      2:      cd Question3
+
+      =>       Explanation : Changes the current directory to Question3.
+
+
+
+      3:      cat > marks.txt <<EOL
+              101, Alice, 45, 32, 40
+              102, Bob, 50, 50, 50
+              103, Charlie, 30, 34, 40
+              104, David, 20, 25, 15
+              105, Eve, 33, 33, 33
+              EOL
+
+              =>       Explanation : Creates a text file 'marks.txt' and adds sample student data.
+
+
+
+      4:      cat marks.txt
+
+      =>       Explanation : Displays the content of marks.txt to verify the data.
+
+
+
+      5:      nano validate_results.sh
+
+      =>       Explanation :  Opens nano editor to create/write the shell script.
+
+
+      6:      chmod +x validate_results.sh
+
+      =>       Explanation :  Makes the shell script executable.
+
+
+      7:      ./validate_results.sh
+
+      =>       Explanation : Executes the script. It reads marks.txt, evaluates each student, and prints:
+                   - Students failed in exactly one subject
+                   - Students passed in all subjects
+                   - Count of students in each category
+
+
+
+      8:      ./validate_results.sh > result.txt
+      9:      cat result.txt
+
+      =>    Explanation :  Redirects script output to a file named result.txt and displays it.
